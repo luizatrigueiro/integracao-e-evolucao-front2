@@ -95,23 +95,7 @@ export default function RelatoriosPage() {
       </div>
     )
   }
-
-  // Redirecionar se não estiver autenticado
-  if (!userId) {
-    return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center">
-          <AlertTriangle className="w-12 h-12 text-red-500 mx-auto mb-4" />
-          <h2 className="text-xl font-semibold text-gray-800 mb-2">Acesso Negado</h2>
-          <p className="text-gray-600 mb-4">Você precisa estar logado para acessar esta página.</p>
-          <Link href="/login">
-            <Button>Fazer Login</Button>
-          </Link>
-        </div>
-      </div>
-    )
-  }
-
+  
   return (
     <div className="min-h-screen bg-gray-50 p-6">
       <div className="max-w-7xl mx-auto space-y-6">
